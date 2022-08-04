@@ -28,6 +28,13 @@ export const TodoApp = () => {
         }
         dispatch(action)
     }
+    const handleRemoveTodo=(id)=>{
+        const action={
+            type:'remove todo',
+            payload:id
+        }
+        dispatch(action)
+    }
 
   return (
     <>
