@@ -9,6 +9,7 @@ export const TodoAdd = ({onNewTodo}) => {
 
   const onFormSubmit=(event)=>{
     event.preventDefault();
+    event.target.value='';
     console.log();
     if(description.lenght <=1)return;
 
@@ -31,7 +32,7 @@ export const TodoAdd = ({onNewTodo}) => {
                 placeholder="Que hay que hacer?"
                 className="form-control"
                 name="description"
-                defaultValue={description}
+                value={description}
                 onChange={oninputchanged}
                  />
                  <button type="submit"

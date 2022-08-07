@@ -1,6 +1,8 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import { TodoApp } from './08-useReducer/TodoApp'
+import { MainApp } from './09-useContext/MainApp'
+import { BrowserRouter } from "react-router-dom";
+/* import { TodoApp } from './08-useReducer/TodoApp' */
 /* import { CallBackHook } from './06-memos/CallBackHook'
 import { MemoHook } from './06-memos/MemoHook' */
 /* import { HookApp } from './HookApp'
@@ -24,6 +26,9 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     {/* <MemoHook/> */}
     {/* <CallBackHook/> */}
     {/* <Padre/> */}
-    <TodoApp/>
+    {/* <TodoApp/> */}
+    <BrowserRouter>
+    <MainApp/>  
+    </BrowserRouter>
   </>
 )
