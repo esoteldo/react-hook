@@ -1,13 +1,13 @@
 import { TodoItem } from "./TodoItem"
 
-export const TodoList = ({todo,onDeleteTodo,onToggleTodo}) => {
+export const TodoList = ({todo}) => {
   return (
     <ul className="list-group">
     {
         todo.map(todo=>(
-            <TodoItem key={todo.id} todo={todo} onDeleteTodo={onDeleteTodo} onToggleTodo={onToggleTodo}/>
+            <TodoItem key={todo.id} todoDescription={todo.description} todoDone={todo.done} />
         )) 
     }
-        </ul>
+     </ul>
   )
 }

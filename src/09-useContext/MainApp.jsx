@@ -16,6 +16,9 @@ export const MainApp = () => {
       <Route path="/" element={<HomePage/>}/>
       <Route path="login" element={<LoginPage/>}/>
       <Route path="about" element={<AboutPage/>}/>
+      {
+        (window.location.pathname=='/hacker') ? <Route path="/hacker" element={<AboutPage/>}/>:console.log(window.location.pathname)
+      }
       {/* las rutas no especificadas se redirigen abajo */}
       <Route path="*" element={<Navigate to="/about"/>}/>
 
